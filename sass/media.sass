@@ -1,0 +1,129 @@
+@media screen and (max-width: 1024px)
+    header
+        background-color: #fff
+        .container  
+            flex-direction: column 
+            padding: 0
+            margin: 0
+            overflow: hidden
+            height: 100%
+            max-height: 89px
+            .head    
+                display: flex
+                width: 100%
+                justify-content: space-between
+                padding: 24px
+                align-items: center
+                border-bottom: 1px solid rgba(9, 18, 57, 0.08)
+                max-width: unset    
+                .logo
+                    max-width: 128px
+                .mobile-button
+                    width: 40px
+                    height: 40px
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 14H28' stroke='%23091239' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 20H28' stroke='%23091239' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 26H28' stroke='%23091239' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='0.5' y='0.5' width='39' height='39' rx='19.5' stroke='%23091239'/%3E%3C/svg%3E%0A")
+                .mobile-button.open
+                    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 14L14 26' stroke='%23091239' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 14L26 26' stroke='%23091239' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='0.5' y='0.5' width='39' height='39' rx='19.5' stroke='%23091239'/%3E%3C/svg%3E%0A")
+            .navi 
+                flex-direction: column
+                align-items: center
+                width: 100%
+                gap: 0
+                padding: 0
+                li,
+                .dropdown  
+                    text-align: start
+                    width: 100% 
+                li
+                    padding: 24px
+                    border-bottom: 1px solid rgba(9, 18, 57, 0.08)
+                .dropdown
+                    align-items: start
+                    flex-direction: column
+                    padding: 0
+                    gap: 0
+                    .top
+                        padding: 24px
+                    ul
+                        position: relative
+                        right: unset    
+                        top: unset
+                        background-color: #F8F8FC
+                        left: 0 
+                        box-shadow: none
+                        border-radius: 0
+                        padding: 0
+                        max-height: 0
+                        overflow: auto
+                        a 
+                            font-size: 16px
+                            max-width: 100vw
+                        .icon-left
+                            width: 32px
+                            min-width: 32px
+                        .icon-right
+                            display: none
+                        a:hover
+                            background-color: #F8F8FC
+                    ul.open
+                        max-height: unset
+                        overflow: scroll
+                .green-button
+                    width: calc( 100vw - 48px )
+                    border-radius: 8px
+                    margin: 24px 0
+        .container.open
+            height: 100vh
+            justify-content: start
+            overflow: scroll
+            max-height: 100%
+            box-shadow: 0px 4px 40px -16px rgba(9, 18, 57, 0.16), 0px 16px 32px -8px rgba(9, 18, 57, 0.16)
+    .faq-container
+        .faq
+            .container
+                margin: 0 24px
+
+@media screen and (max-width: 678px)
+    .faq-container
+        .faq
+            .container
+                .header
+                    font-size: 32px
+                .item
+                    min-height: 68px
+                    height: 68px
+                    .top
+                        padding: 16px 24px 16px 16px
+                        p
+                            font-size: 16px
+                    .bottom
+                        gap: 16px
+                        p
+                            font-size: 16px
+                        .list
+                            .bold
+                                font-size: 20px !important
+                                line-height: 28px
+                        ul,
+                        ol
+                            li
+                                font-size: 16px
+                    .bottom.active
+                        padding: 0px 24px 16px 16px
+                    
+@media screen and (max-width: 460px)
+    .faq-container
+        .faq
+            .container
+                .bottom
+                    padding: 16px
+
+@media screen and (max-width: 400px)
+    .faq-container
+        .faq
+            .container
+                .bottom
+                    p
+                        font-size: 16px !important
